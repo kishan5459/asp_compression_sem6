@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DCT Image Compression</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DCT Image Compression</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label class="file-label">
+                Choose Image
+                <input type="file" name="image" id="imageInput" accept="image/*" required>
+            </label>
+            
+            <button type="submit">Compress</button>
+        </form>
+
+        <div class="progress" style="display: none;">
+            <div id="bar"></div>
+        </div>
+
+        <div id="result" style="display: none;">
+            <p><strong>Original Size:</strong> <span id="origSize"></span> KB</p>
+            <p><strong>Compressed Size:</strong> <span id="compSize"></span> KB</p>
+            <p><strong>Compression Ratio:</strong> <span id="ratio"></span>%</p>
+            <a id="downloadLink" href="#" download>Download Compressed Image</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

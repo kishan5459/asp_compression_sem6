@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #0057b7;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0057b7;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.file-label input[type="file"] {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #009e60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #007a49;
+}
+
+.progress {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#bar {
+  height: 20px;
+  width: 0%;
+  background-color: #0057b7;
+  transition: width 0.4s ease;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#result p {
+  margin: 8px 0;
+}
+
+#downloadLink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 15px;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#downloadLink:hover {
+  background-color: #e67e22;
+}
+
